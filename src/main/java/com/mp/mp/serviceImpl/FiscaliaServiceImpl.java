@@ -16,6 +16,11 @@ public class FiscaliaServiceImpl implements FiscaliaService {
 	private FiscaliaRepository fiscaliaRepository;
 	
 	@Override
+	public Fiscalia updateFiscalia(Fiscalia fiscalia) {
+		return fiscaliaRepository.save(fiscalia);
+	}
+	
+	@Override
 	public Fiscalia addFiscalia(Fiscalia fiscalia) {
 		return fiscaliaRepository.save(fiscalia);
 	}
