@@ -18,13 +18,13 @@ public class Fiscalia {
 	@Column(name="fs_id", length=10, nullable=false)
 	private int fs_id;
 	
-	@Column(name="fs_nombre")
+	@Column(name="fs_nombre", length=50)
 	private String fs_nombre;
 	
-	@Column(name="fs_direccion")
+	@Column(name="fs_direccion", length=500)
 	private String fs_direccion;
 	
-	@Column(name="fs_numero")
+	@Column(name="fs_numero", length=13)
 	private String fs_numero;
 	
 	public Fiscalia() {
