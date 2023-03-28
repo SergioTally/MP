@@ -17,8 +17,14 @@ public class Fiscalia {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="fs_id", length=10, nullable=false)
 	private int fs_id;
+	
+	@Column(name="fs_nombre")
 	private String fs_nombre;
+	
+	@Column(name="fs_direccion")
 	private String fs_direccion;
+	
+	@Column(name="fs_numero")
 	private String fs_numero;
 	
 	public Fiscalia() {
@@ -70,6 +76,11 @@ public class Fiscalia {
 
 	public void setFs_numero(String fs_numero) {
 		this.fs_numero = fs_numero;
+	}
+
+	public Fiscalia orElse(Object object) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

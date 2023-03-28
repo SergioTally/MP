@@ -29,4 +29,24 @@ public class FiscaliaServiceImpl implements FiscaliaService {
 	public List<Fiscalia> allFiscalia(){
 		return fiscaliaRepository.findAll();
 	}
+
+	@Override
+	public Fiscalia deleteFiscalia(int fs_id) {
+		// TODO Auto-generated method stub
+		fiscaliaRepository.deleteById(fs_id);
+		return fiscaliaRepository.findById(fs_id);
+	}
+
+	@Override
+	public void deleteById(int fs_id) {
+		// TODO Auto-generated method stub
+		fiscaliaRepository.deleteById(fs_id);
+	}
+
+	@Override
+	public Fiscalia findById(int fs_id) {
+		// TODO Auto-generated method stub
+		return fiscaliaRepository.findById(fs_id);
+	}
+
 }
